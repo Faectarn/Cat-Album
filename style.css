@@ -1,0 +1,70 @@
+*{box-sizing:border-box}
+
+:root {
+    font-size:62.5%;
+}
+
+@font-face {
+    font-family: simplecat;
+    src: url(Simplecat.otf);
+}
+
+body {
+    font-family: "simplecat";
+    font-size: 2.3rem;
+    min-height: 120vh;
+    background-image: url(https://wallpaperaccess.com/full/6431103.jpg);
+    }
+
+main {
+    max-width: 100rem;
+    margin: 1rem auto;
+}
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    font-size: 1.8rem;
+    font-family: "simplecat";
+    width: 16rem;
+    height: 5rem;
+    padding: .5em;
+    border-radius: 10px;
+    border: black 2.5px;
+    border-style: solid;
+    color:#fff;
+    background: rgb(170, 67, 84);
+    cursor: pointer;
+    }
+
+button[disabled] {
+    opacity: .3;
+    cursor: not-allowed;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 4/3;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.pageIndicator {
+    display: block;
+    text-align: right;
+}
+
